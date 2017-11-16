@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@import "_setting";
+
+html,body
+  //height: 100%
+
+html.start,
+body.start
+  overflow: hidden
+
+
+body
+  background: $bgBody
+  margin: 0
+  padding: 0
+  font-family: $FamCom
+
+a
+  color: $colorLink
+  text-decoration: none
+  transition: all $dur
+  outline: none
+
+  &:hover
+    color: $colorLink-h
+
+h1,h2,h3,h4,h5,h6
+  font-family: $FamH
