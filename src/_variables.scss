@@ -75,11 +75,11 @@ $x: 420;
 
 
 $adatp-size: (
-  e: $e,
-  l: $l,
-  m: $m,
-  s: $s,
-  x: $x
+  -e: $e,
+  -l: $l,
+  -m: $m,
+  -s: $s,
+  -x: $x,
 );
 
 $pos-elem: (

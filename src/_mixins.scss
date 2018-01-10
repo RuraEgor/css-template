@@ -134,11 +134,11 @@
       #{$prefix}{
         @each $name, $name-data in $pos-elem {
           @each $val in $indent-data {
-            &#{$val}-#{$name-adapt} {
+            &#{$val}#{$name-adapt} {
               #{$type}: #{$val}px !important;
             }
             &#{$name} {
-              &#{$val}-#{$name-adapt} {
+              &#{$val}#{$name-adapt} {
                 #{$type}-#{$name-data}: #{$val}px !important;
               }
             }
@@ -188,17 +188,17 @@
 
     @for $i from 1 to $column-count {
 
-      .c#{$i}-#{$name} {
+      .c#{$i}#{$name} {
         width: ($column-width-1 * $i) + %;
         padding: 0 #{$indent-grid}px;
       }
 
-      .co#{$i}-#{$name} {
+      .co#{$i}#{$name} {
         margin-left: ($column-width-1 * $i) + %;
       }
     }
 
-    .c#{$column-count}-#{$name} {
+    .c#{$column-count}#{$name} {
       width: 100%;
       padding: 0 #{$indent-grid}px;
     }

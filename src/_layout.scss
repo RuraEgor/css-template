@@ -10,29 +10,7 @@
 }
 
 %btn {
-	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 	display: block;
-	text-decoration: none;
-	background-color: transparent;
-	border: 2px solid $red-color;
-	border-radius: 24px;
-	width: 270px;
-	height: 44px;
-	@extend %fluid;
-	line-height: 40px;
-	text-align: center;
-	color: $darkblue-color;
-	@include font(14, 18, 375, 1440);
-	cursor: pointer;
-	&:hover {
-		background-color: $red-color;
-		color: $white-color;
-	}
-	&:active {
-		background-color: #d95100;
-		border-color: #d95100;
-		color: $white-color;
-	}
 }
 
 %blue-separator {
@@ -57,11 +35,6 @@
 body {
 
 }
-
-
-
-
-
 
 
 
@@ -151,19 +124,19 @@ body {
 @each $name, $data in $adatp-size {
 	@include max-w($data) {
 
-		.faic-#{$name} {
+		.faic#{$name} {
 			align-items: center;
 		}
 
-		.faib-#{$name} {
+		.faib#{$name} {
 			align-items: baseline;
 		}
 
-		.fais-#{$name} {
+		.fais#{$name} {
 			align-items: flex-start;
 		}
 
-		.faie-#{$name} {
+		.faie#{$name} {
 			align-items: flex-end;
 		}
 	}
@@ -254,19 +227,19 @@ body {
 
 @each $name, $data in $adatp-size {
 	@include max-w($data) {
-		.t-#{$name} {
+		.t#{$name} {
 			text-align: left !important;
 		}
 
-		.tr-#{$name} {
+		.tr#{$name} {
 			text-align: right !important;
 		}
 
-		.tc-#{$name} {
+		.tc#{$name} {
 			text-align: center !important;
 		}
 
-		.tj-#{$name} {
+		.tj#{$name} {
 			text-align: justify !important;
 		}
 	}
