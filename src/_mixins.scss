@@ -205,3 +205,20 @@
 
   }
 }
+
+
+// WIDTH
+//================================================================================
+
+$width-cont: $max-w / $column-count;
+
+@for $i from 1 to $column-count {
+
+  .bw#{$i} {
+    max-width: round($i * $width-cont) + px;
+  }
+}
+
+.bw {
+  max-width: $max-w + px;
+}
