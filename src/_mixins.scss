@@ -130,7 +130,7 @@
 @each $name-adapt, $data in $adatp-size {
   @include max-w($data) {
 
-    @each $prefix, $type in (pd: padding, mr: margin) {
+    @each $prefix, $type in (p: padding, m: margin) {
       #{$prefix}{
         @each $name, $name-data in $pos-elem {
           @each $val in $indent-data {
