@@ -111,7 +111,7 @@
 // CLASS PADDING AND MARGIN
 //================================================================================
 @each $prefix, $type in (p: padding, m: margin) {
-  #{$prefix}{
+  .#{$prefix}{
     @each $name, $name-data in $pos-elem {
       @each $val in $indent-data {
         &#{$val} {
@@ -131,7 +131,7 @@
   @include max-w($data) {
 
     @each $prefix, $type in (p: padding, m: margin) {
-      #{$prefix}{
+      .#{$prefix}{
         @each $name, $name-data in $pos-elem {
           @each $val in $indent-data {
             &#{$val}#{$name-adapt} {
@@ -153,11 +153,20 @@
 
 // GRID
 //================================================================================
+.ct {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: #{$indent-grid}px;
+  padding-left: #{$indent-grid}px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-left: -#{$indent-grid}px;
   margin-right: -#{$indent-grid}px;
+  flex: 0 0 auto;
 }
 
 .cf {
