@@ -25,7 +25,7 @@ var path = {
             styles: 'src/*.*'
         },
         watch: {
-            styles:    'src/styles/**/*.scss'
+            styles:    'src/**/*.scss'
             //styles: 'src/*.sass',
         }
 };
