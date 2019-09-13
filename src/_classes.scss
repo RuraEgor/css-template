@@ -1,0 +1,228 @@
+//ADD-STYLE
+//=========
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+// GLOBAL-CLASS
+//================================================================================
+.w {
+  width: 100%;
+}
+
+.bl {
+  display: block;
+  width: 100%;
+}
+
+
+// MARGIN
+//----------
+.ma {
+  margin: auto;
+}
+
+.malr {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mat {
+  margin-top: auto;
+}
+
+.mar {
+  margin-right: auto;
+}
+
+.mab {
+  margin-bottom: auto;
+}
+
+.mal {
+  margin-left: auto;
+}
+
+.mat {
+  margin-top: auto;
+}
+
+// STYLE-POSITION
+//================================================================================
+.pr {
+  position: relative;
+}
+
+// STYLE-FLOAT
+//================================================================================
+
+.fll {
+  float: left;
+}
+
+.flr {
+  float: right;
+}
+
+.bcl {
+  display: block;
+  clear: both;
+}
+
+// STYLE-FLEX
+//================================================================================
+.dn {
+  display: none;
+}
+
+.db {
+  display: block;
+}
+
+.di {
+  display: inline;
+}
+
+.dib {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.df {
+  display: flex;
+}
+
+.dif {
+  display: inline-flex;
+}
+
+
+// FONT-ALIGN
+//----------
+.t {
+  text-align: left;
+}
+
+.tr	{
+  text-align: right;
+}
+
+.tc	{
+  text-align: center;
+}
+
+.tj {
+  text-align: justify;
+}
+
+
+// FONT-WEIGHT
+//----------
+.fw {
+  font-weight: normal;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.fwl {
+  font-weight: lighter;
+}
+
+// BACKGROUND
+//----------
+.bgc {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bgt {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+//----------
+.facc {
+  align-content: center;
+}
+
+.facs {
+  align-content: flex-start;
+}
+
+.face {
+  align-content: flex-end;
+}
+
+.facb {
+  align-content: space-between;
+}
+
+.faca {
+  align-content: space-around;
+}
+
+.facst {
+  align-content: stretch;
+}
+
+//----
+
+.fasc {
+  align-self: center;
+}
+
+.fasb {
+  align-self: baseline;
+}
+
+.fass {
+  align-self: flex-start;
+}
+
+.fase {
+  align-self: flex-end;
+}
+
+.fasst {
+  align-self: stretch;
+}
+
+.fasa {
+  align-self: auto;
+}
+
+//----
+
+.fjc {
+  justify-content: center;
+}
+
+.fjs {
+  justify-content: flex-start;
+}
+
+.fje {
+  justify-content: flex-end;
+}
+
+.fja {
+  justify-content: space-around;
+}
+
+.fjb {
+  justify-content: space-between;
+}
+
+
