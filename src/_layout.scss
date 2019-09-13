@@ -1,19 +1,5 @@
 /*
 
-.t  - text-align: left
-.tr
-.tl
-.tc
-.tj
-
-.fw - font: weight
-.fwb
-.fwl
-
-------
-
-.bl
-
 .bcl - clear: both
 
 .ma	- margin: auto
@@ -50,9 +36,36 @@
 	width: 100%;
 }
 
-.ba {
-	margin-left: auto !important;
-	margin-right: auto !important;
+
+// MARGIN
+//----------
+.ma {
+	margin: auto;
+}
+
+.malr {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mat {
+  margin-top: auto;
+}
+
+.mar {
+  margin-right: auto;
+}
+
+.mab {
+  margin-bottom: auto;
+}
+
+.mal {
+  margin-left: auto;
+}
+
+.mat {
+  margin-top: auto;
 }
 
 // STYLE-POSITION
@@ -79,49 +92,77 @@
 
 // STYLE-FLEX
 //================================================================================
-.f {
-	display: flex;
-	flex-wrap: wrap;
+.dn {
+  display: none;
 }
 
-.faic {
-	align-items: center;
+.db {
+  display: block;
 }
 
-.faib {
-	align-items: baseline;
+.di {
+  display: inline;
 }
 
-.fais {
-	align-items: flex-start;
+.dib {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.faie {
-	align-items: flex-end;
+.df {
+  display: flex;
 }
 
-@each $name, $data in $adatp-size {
-	@include max-w($data) {
-
-		.faic#{$name} {
-			align-items: center;
-		}
-
-		.faib#{$name} {
-			align-items: baseline;
-		}
-
-		.fais#{$name} {
-			align-items: flex-start;
-		}
-
-		.faie#{$name} {
-			align-items: flex-end;
-		}
-	}
+.dif {
+  display: inline-flex;
 }
 
-//----
+// FONT
+//----------
+.t {
+  text-align: left;
+}
+
+.tr	{
+  text-align: right;
+}
+
+.tc	{
+  text-align: center;
+}
+
+.tj {
+  text-align: justify;
+}
+
+
+.fw {
+  font-weight: normal;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.fwl {
+  font-weight: lighter;
+}
+
+// BACKGROUND
+//----------
+.bgc {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bgt {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+//----------
 
 .facc {
 	align-content: center;
