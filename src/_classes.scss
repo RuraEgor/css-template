@@ -57,8 +57,62 @@ button {
 
 // STYLE-POSITION
 //================================================================================
+.ps {
+  position: static;
+}
+
 .pr {
   position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+.pf {
+  position: fixed;
+}
+
+
+.or_1 {
+  order: -1;
+}
+
+.or0 {
+  order: 0;
+}
+
+.or1 {
+  order: 1;
+}
+
+.or2 {
+  order: 2;
+}
+
+.or3 {
+  order: 3;
+}
+
+
+.z_1 {
+  z-index: -1;
+}
+
+.z0 {
+  z-index: 0;
+}
+
+.z1 {
+  z-index: 1;
+}
+
+.z5 {
+  z-index: 5;
+}
+
+.z10 {
+  z-index: 10;
 }
 
 // STYLE-FLOAT
@@ -153,27 +207,27 @@ button {
 }
 
 //----------
-.facc {
+.fac {
   align-content: center;
 }
 
-.facs {
+.fas {
   align-content: flex-start;
 }
 
-.face {
+.fae {
   align-content: flex-end;
 }
 
-.facb {
+.fab {
   align-content: space-between;
 }
 
-.faca {
+.faa {
   align-content: space-around;
 }
 
-.facst {
+.fast {
   align-content: stretch;
 }
 
@@ -225,4 +279,4 @@ button {
   justify-content: space-between;
 }
 
-
+//----
